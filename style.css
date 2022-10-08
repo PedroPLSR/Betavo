@@ -1,19 +1,5 @@
 body {
-  background-color: #0A1322;
-}
-
-.form-control-dark {
-  border-color: var(--bs-gray);
-}
-.form-control-dark:focus {
-  border-color: #fff;
-  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
-}
-
-.text-small {
-  font-size: 85%;
-}
-
-.dropdown-toggle {
-  outline: 0;
+  /* TODO: aprender como adiciona esquema de cores no bootstrap 
+  link: https://www.youtube.com/watch?v=9FX5NgRrdnc */
+  background-color: rgb(77, 77, 77);
 }
