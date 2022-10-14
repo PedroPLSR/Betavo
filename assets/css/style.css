@@ -1,3 +1,17 @@
+/* Global settings */
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #8257E5;
+}
+
+/* Main screens */
 .btn-normal {
     position: relative;
     margin: 0;
@@ -101,4 +115,13 @@
     margin-left: 10px;
     margin-right: auto;
     margin-top: 10px;
+}
+
+/* User Screen, Deposit, Withdraw */
+.selection-menu {
+    position: fixed;
+    border-right: 2px solid;
+    border-color: #283346;
+    width: 300px;
+    height: 100%;
 }
