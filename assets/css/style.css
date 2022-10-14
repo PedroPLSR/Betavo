@@ -10776,6 +10776,7 @@ textarea.form-control-lg {
   padding-right: 1.9rem;
   margin: 0;
 }
+
 .btn-normal span {
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
@@ -10800,6 +10801,10 @@ textarea.form-control-lg {
   height: 65px;
   border-radius: 0px 5px 5px 0px;
   border-width: 2px;
+}
+
+.btn-detail-left {
+  
 }
 
 .btn-bet-right {
