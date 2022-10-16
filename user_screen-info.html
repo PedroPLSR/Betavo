@@ -10,6 +10,37 @@
     <style>
       section {
         padding: 30px 0;
+
+      }
+
+      a>img {
+        width: 25%;
+        transition: width .2s ease-in-out;
+      }
+
+      a>img:hover {
+        width: 30%;
+        transition: width .2s ease-in-out;
+      }
+
+      #logo {
+        width: 32%;
+        transition: width .2s ease-in-out;
+      }
+
+      #logo:hover {
+        width: 37%;
+        transition: width .2s ease-in-out;
+      }
+
+      #user_avatar {
+        width: 65%;
+        transition: width .2s ease-in-out;
+      }
+
+      #user_avatar:hover {
+        width: 70%;
+        transition: width .2s ease-in-out;
       }
     </style>
   </head>
@@ -18,12 +49,25 @@
 
     <nav class="navbar navbar-expand-lg bg-success" style="color: #283346;">
       <div class="container">
-        <a class="navbar-brand mb-0 h3 text-white" style="font-size:x-large" href="#">
-          <img class="d-inline-block align-middle" src="assets/images/logo.svg"></img>
+        <a class="navbar-brand mb-0 h3 text-white" style="font-size:x-large" href="main_screen-login.html">
+          <img class="d-inline-block align-middle" src="assets/images/logo.svg" id="logo"></img>
           Betavo
         </a>
         <!-- TODO: Fazer ícone de usuário -->
-        <div class="d-inline-block align-right"></div>
+        <div class="d-inline-block align-right dropdown">
+          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/assets/images/avatar.svg" alt="foto" height="60px" width="60px" id="user_avatar">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark ">
+            <li><a class="dropdown-item" href="user_screen-info.html">Perfil</a></li>
+            <li><a class="dropdown-item" href="deposit_screen.html">Depositar</a></li>
+            <li><a class="dropdown-item" href="withdraw_screen.html">Sacar</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Sair</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 

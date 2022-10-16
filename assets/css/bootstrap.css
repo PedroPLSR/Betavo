@@ -3983,6 +3983,7 @@ fieldset:disabled .btn {
   overflow: hidden;
   border-top: 1px solid var(--bs-dropdown-divider-bg);
   opacity: 1;
+  background-color: #0A1322;
 }
 
 .dropdown-item {
@@ -4040,7 +4041,7 @@ fieldset:disabled .btn {
 
 .dropdown-menu-dark {
   --bs-dropdown-color: #dee2e6;
-  --bs-dropdown-bg: #343a40;
+  --bs-dropdown-bg: #1D2738;
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
   --bs-dropdown-box-shadow: ;
   --bs-dropdown-link-color: #dee2e6;

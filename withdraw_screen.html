@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Betavo - Tela de Depósito</title>
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
 
-<style> 
-  a>img{
-    width: 25%;
-    transition: width .2s ease-in-out;
-  }
-  
-  a>img:hover{
-    width: 30%;
-    transition: width .2s ease-in-out;
-  }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betavo - Tela de Depósito</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <style>
+    a>img {
+      width: 25%;
+      transition: width .2s ease-in-out;
+    }
+
+    a>img:hover {
+      width: 30%;
+      transition: width .2s ease-in-out;
+    }
+
+    #logo {
+      width: 32%;
+      transition: width .2s ease-in-out;
+    }
+
+    #logo:hover {
+      width: 37%;
+      transition: width .2s ease-in-out;
+    }
+
+    #user_avatar {
+      width: 65%;
+      transition: width .2s ease-in-out;
+    }
+
+    #user_avatar:hover {
+      width: 70%;
+      transition: width .2s ease-in-out;
+    }
   </style>
-  
-  
+
+
   <body style="background-color: #0A1322;">
-    
+
     <nav class="navbar navbar-expand-lg bg-success" style="color: #283346;">
       <div class="container">
-        <a class="navbar-brand mb-0 h3 text-white" style="font-size:x-large" href="#">
-          <img class="d-inline-block align-middle" src="assets/images/logo.svg"></img>
+        <a class="navbar-brand mb-0 h3 text-white" style="font-size:x-large" href="main_screen-login.html">
+          <img class="d-inline-block align-middle" src="assets/images/logo.svg" id="logo"></img>
           Betavo
         </a>
         <!-- TODO: Fazer ícone de usuário -->
-        <div class="d-inline-block align-right"></div>
+        <div class="d-inline-block align-right dropdown">
+          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/assets/images/avatar.svg" alt="foto" height="60px" width="60px" id="user_avatar">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark ">
+            <li><a class="dropdown-item" href="user_screen-info.html">Perfil</a></li>
+            <li><a class="dropdown-item" href="deposit_screen.html">Depositar</a></li>
+            <li><a class="dropdown-item" href="withdraw_screen.html">Sacar</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Sair</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
-  
-    <div class="selection-menu container text-center text-white p-5">
-      <!-- TODO: Diferenciar os links ativos e inativos pelas cores: #FFFFFF e #4B5D7C -->
-      <div class="p-4">
-        <a href="user_screen-info.html">Perfil</a>
-      </div>
-      <div class="p-4">
-        <a onclick="mudaTela(1)" href="deposit_screen.html">Depositar</a>
-      </div>
-      <div class="p-4">
-        <a href="withdraw_screen.html"><u style="color:#8257E5">Sacar</u></a>
-      </div>
-    </div>
-  
-  <!-- tela deposito 1 -->
+
+
+
+    <!-- tela deposito 1 -->
     <div class="container position-relative" id="deposito1" style="display:block;">
       <div class="position-absolute" style="left: 25%; margin-top: 3%;">
         <div class="row">
@@ -59,142 +82,153 @@
           </p>
         </div>
         <div class="row mt-3 w-75 rounded" style="border:2px solid gray ;">
-          
+
           <div class="row ms-4">
             <div class="col col-sm col-lg-11">
-              <a onclick="mudaTela(2)" href="#"> 
-                <img src="assets/images/deposit/paypallogo.png" alt="paypalkkkk" class="bg-white rounded m-3" style="border:2px solid gray ;">
+              <a onclick="mudaTela(2)" href="#">
+                <img src="assets/images/deposit/paypallogo.png" alt="paypalkkkk" class="bg-white rounded m-3"
+                  style="border:2px solid gray ;">
               </a>
-              <a onclick="mudaTela(2)" href="#"> 
-                <img src="assets/images/deposit/pixlogo.png" alt="pixkkkk" class="bg-white rounded m-3" style="border:2px solid gray ;">
+              <a onclick="mudaTela(2)" href="#">
+                <img src="assets/images/deposit/pixlogo.png" alt="pixkkkk" class="bg-white rounded m-3"
+                  style="border:2px solid gray ;">
               </a>
-              <a href="#"> 
-                <img src="assets/images/deposit/vish.png" alt="nadanaoprof" class="rounded m-3" style="border:2px solid gray ;">
+              <a href="#">
+                <img src="assets/images/deposit/vish.png" alt="nadanaoprof" class="rounded m-3"
+                  style="border:2px solid gray ;">
               </a>
             </div>
           </div>
           <div class="row ms-4">
             <div class="col col-sm col-lg-11">
-              <a href="#" > 
-                <img src="assets/images/deposit/vish.png" alt="nadanaoprof" class="rounded m-3" style="border:2px solid gray ;">
+              <a href="#">
+                <img src="assets/images/deposit/vish.png" alt="nadanaoprof" class="rounded m-3"
+                  style="border:2px solid gray ;">
               </a>
-              <a href="#"> 
-                <img src="assets/images/deposit/vish.png" alt="nadanaoprof" class="rounded m-3" style="border:2px solid gray ;">
+              <a href="#">
+                <img src="assets/images/deposit/vish.png" alt="nadanaoprof" class="rounded m-3"
+                  style="border:2px solid gray ;">
               </a>
-              <a href="#"> 
-                <img src="assets/images/deposit/vish.png" alt="nadanaoprof" class=" rounded m-3 "style="border:2px solid gray ;">
+              <a href="#">
+                <img src="assets/images/deposit/vish.png" alt="nadanaoprof" class=" rounded m-3 "
+                  style="border:2px solid gray ;">
               </a>
             </div>
           </div>
-  
+
         </div>
       </div>
     </div>
-  <!-- Tela deposito 2 -->
+    <!-- Tela deposito 2 -->
     <div class="container position-relative" id="deposito2" style="display:none;">
-    <div class="position-absolute" style="left: 25%; margin-top: 3%;">
-      <div class="row">
-        <div class="wrapper d-flex align-items-center">
-          <button onclick="mudaTela(1)" class="btn btn-primary m-2 d-flex justify-content-center" style="max-width:5% ;">
-            <img src="assets/images/deposit/pngwing.com.png" alt="voltar" style="max-width:100% ;">
-          </button>
-          <p class="text-white h2">
-            Sacar
+      <div class="position-absolute" style="left: 25%; margin-top: 3%;">
+        <div class="row">
+          <div class="wrapper d-flex align-items-center">
+            <button onclick="mudaTela(1)" class="btn btn-primary m-2 d-flex justify-content-center"
+              style="max-width:5% ;">
+              <img src="assets/images/deposit/pngwing.com.png" alt="voltar" style="max-width:100% ;">
+            </button>
+            <p class="text-white h2">
+              Sacar
+            </p>
+          </div>
+          <p class="text-muted h6">
+            Pix é o sistema de pagamentos criado pelo Banco Central do Brasil que usa
+            QR Codes para transferir dinheiro globalmente em tempo real.
           </p>
         </div>
-        <p class="text-muted h6">
-          Pix é o sistema de pagamentos criado pelo Banco Central do Brasil que usa
-          QR Codes para transferir dinheiro globalmente em tempo real.
-        </p>
+        <div class="row mt-3 w-50 rounded" style="border:2px solid gray ;">
+
+          <div class="form text-center">
+            <div class="col text-center">
+              <p class="text-white h2 mt-3">
+                Seu saldo é de: R$ XXXX,xx
+              </p>
+              <div class="input-wrapper ms-3">
+                <p class="text-white h7 mt-3 text-start">
+                  Valor (R$ 60,00 - R$ 500,00)
+                </p>
+                <input type="text" class="form-control bg-secondarydark text-white border-0">
+              </div>
+              <div class="input-wrapper ms-3">
+                <p class="text-white h7 mt-3 text-start">
+                  CPF
+                </p>
+                <input type="text" class="form-control bg-secondarydark text-white border-0">
+              </div>
+              <button onclick="mudaTela(3)" class="btn btn-primary m-4 text-center	">
+                Transferir
+              </button>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="row mt-3 w-50 rounded" style="border:2px solid gray ;">
-  
-        <div class="form text-center" >
-          <div class="col text-center">
-            <p class="text-white h2 mt-3">
-              Seu saldo é de: R$ XXXX,xx
-            </p>
-            <div class="input-wrapper ms-3">
-              <p class="text-white h7 mt-3 text-start">
-                Valor (R$ 60,00 - R$ 500,00)
-              </p>
-              <input type="text" class="form-control bg-secondarydark text-white border-0">
-            </div>
-            <div class="input-wrapper ms-3">
-              <p class="text-white h7 mt-3 text-start">
-                CPF
-              </p>
-              <input type="text" class="form-control bg-secondarydark text-white border-0">
-            </div>
-            <button onclick="mudaTela(3)" class="btn btn-primary m-4 text-center	">
-              Transferir
+    </div>
+    <!-- Tela deposito 3 -->
+    <div class="container position-relative" id="deposito3" style="display:none;">
+      <div class="position-absolute" style="left: 25%; margin-top: 3%;">
+        <div class="row">
+          <div class="wrapper d-flex align-items-center">
+            <button onclick="mudaTela(2)" class="btn btn-primary m-2 d-flex justify-content-center"
+              style="max-width:5% ;">
+              <img src="assets/images/deposit/pngwing.com.png" alt="voltar" style="max-width:100% ;">
             </button>
+            <p class="text-white h2">
+              Sacar
+            </p>
+          </div>
+          <p class="text-muted h6">
+            Pix é o sistema de pagamentos criado pelo Banco Central do Brasil que usa
+            QR Codes para transferir dinheiro globalmente em tempo real.
+          </p>
+        </div>
+        <div class="row mt-3 w-50 rounded p-3" style="border:2px solid gray ;">
+          <div class="row">
+            <p class="text-white h2">
+              Transferência realizada!
+            </p>
+            <p class="text-muted h6">
+              Verifique seu aplicativo do banco.
+            </p>
           </div>
         </div>
-  
       </div>
     </div>
-  </div>
-  <!-- Tela deposito 3 -->
-  <div class="container position-relative" id="deposito3" style="display:none;">
-    <div class="position-absolute" style="left: 25%; margin-top: 3%;">
-      <div class="row">
-        <div class="wrapper d-flex align-items-center">
-          <button onclick="mudaTela(2)" class="btn btn-primary m-2 d-flex justify-content-center" style="max-width:5% ;">
-            <img src="assets/images/deposit/pngwing.com.png" alt="voltar" style="max-width:100% ;">
-          </button>
-          <p class="text-white h2">
-            Sacar
-          </p>
-        </div>
-        <p class="text-muted h6">
-          Pix é o sistema de pagamentos criado pelo Banco Central do Brasil que usa
-          QR Codes para transferir dinheiro globalmente em tempo real.			
-        </p>
-      </div>
-      <div class="row mt-3 w-50 rounded p-3" style="border:2px solid gray ;">
-        <div class="row">
-          <p class="text-white h2">
-            Transferência realizada!
-          </p>
-          <p class="text-muted h6">
-            Verifique seu aplicativo do banco.			
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <script> 
-  
-    var deposito = {
-      deposito1: document.getElementById("deposito1"), 
-      deposito2: document.getElementById("deposito2"),
-      deposito3: document.getElementById("deposito3"),
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <script>
+
+      var deposito = {
+        deposito1: document.getElementById("deposito1"),
+        deposito2: document.getElementById("deposito2"),
+        deposito3: document.getElementById("deposito3"),
       }
-    
-    function mudaTela(paran){
-      if(paran == 1){
-      deposito.deposito1.style.display = "block"
-      deposito.deposito2.style.display = "none"
-      deposito.deposito3.style.display = "none"
-      } 
-      else if(paran == 2){
-        deposito.deposito1.style.display = "none"
-        deposito.deposito2.style.display = "block"
-        deposito.deposito3.style.display = "none"
-      } 
-      else if(paran == 3){
-        deposito.deposito1.style.display = "none"
-        deposito.deposito2.style.display = "none"
-        deposito.deposito3.style.display = "block"
+
+      function mudaTela(paran) {
+        if (paran == 1) {
+          deposito.deposito1.style.display = "block"
+          deposito.deposito2.style.display = "none"
+          deposito.deposito3.style.display = "none"
+        }
+        else if (paran == 2) {
+          deposito.deposito1.style.display = "none"
+          deposito.deposito2.style.display = "block"
+          deposito.deposito3.style.display = "none"
+        }
+        else if (paran == 3) {
+          deposito.deposito1.style.display = "none"
+          deposito.deposito2.style.display = "none"
+          deposito.deposito3.style.display = "block"
+        }
       }
-    }
-  
-  
-  </script>
-  
+
+
+    </script>
+
   </body>
-  </html>
+
+</html>
