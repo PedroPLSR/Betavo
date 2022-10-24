@@ -166,11 +166,56 @@
                 </label>
                 <input type="password" class="text-white form-control validate bg-success border border-dark border-2" style="padding: 12px;">
               </div>
+
+              <!-- Checkbox -->
+              <div style="margin-left: 3px;margin-top: 25px;">
+                <div>
+                  <input type="checkbox" class="form-check-input" id="termos-de-uso" name="termos-de-uso" style="outline: solid 5px #0A1322" required>
+                  <label for="termos-de-uso" style="margin-left: 10px;">Concordo com os Termos de Uso da Betavo</label>
+                </div>
+                
+                <div style="margin-top: 20px;">
+                  <input type="checkbox" class="form-check-input" id="politica-de-privacidade" name="politica-de-privacidade" style="outline: solid 5px #0A1322" required>
+                  <label for="termos-de-uso" style="margin-left: 10px;">Concordo com a Política de Privacidade da Betavo</label>
+                </div>
+              </div>
             </div>
-            <!-- TODO: FAZER CHECKBOX TERMOS E CONDIÇÕES -->
           </div>
           <div class="modal-footer d-flex justify-content-center" style="margin-bottom: 20px;">
-            <button type="button" class="btn btn-primary w-100 p-2">Registrar</button>
+            <button type="button" class="btn btn-primary w-100 p-2" data-bs-toggle="modal" data-bs-target="#confirmationCode">Registrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Código de confirmação -->
+    <div class="modal fade" id="confirmationCode">
+      <div class="modal-dialog">
+        <div class="modal-content text-white bg-success border border-dark border-4 ps-4 pe-4">
+          <div class="modal-header text-center align-left w-100" style="height: 20px; margin-top: 20px;">
+            <h4 class="modal-title text-left font-weight-bold">Sua conta está prestes a ser criada!<h4>
+            <!-- <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body mb-0" >
+            <p>
+              Confirme abaixo o código de 5 digitos que foi enviado ao seu email: 
+            </p>
+            <div class="d-flex justify-content-center">
+              <div class="mb-3 input-group input-group-lg">
+                <div class="d-flex w-100" style="width: 75px; height: 75px;">
+                  <input type="text" class="fs-3 m-1 form-control text-center bg-success border border-dark text-white" aria-label="Text input with checkbox" maxlength="1" style="height: 75px;">
+                  <input type="text" class="fs-3 m-1 form-control text-center bg-success border border-dark text-white" aria-label="Text input with checkbox" maxlength="1" style="height: 75px;">
+                  <input type="text" class="fs-3 m-1 form-control text-center bg-success border border-dark text-white" aria-label="Text input with checkbox" maxlength="1" style="height: 75px;">
+                  <input type="text" class="fs-3 m-1 form-control text-center bg-success border border-dark text-white" aria-label="Text input with checkbox" maxlength="1" style="height: 75px;">
+                  <input type="text" class="fs-3 m-1 form-control text-center bg-success border border-dark text-white" aria-label="Text input with checkbox" maxlength="1" style="height: 75px;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center" style="margin-top: 0px;margin-bottom: 20px;">
+            <a type="button" class="btn btn-primary w-100 p-2" href="main_screen-login.html">
+              Retornar à Betavo
+            </a>
           </div>
         </div>
       </div>
@@ -242,7 +287,9 @@
         <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div class="bg-success p-3 rounded"></div>
+        <div class="bg-success p-3 rounded">
+          <h6>Furia esports vs Furia esports</h6>
+        </div>
       </div>
     </div>
     <!-- TODO:Fazer pop-up window de login e registrar 
