@@ -3,8 +3,6 @@
 
   <!-- TODO: ainda não finalizados:
   - TELA PADRÃO DE CRIAÇÃO DE NOVA SENHA
-  - MENU LATERAL
-  - MENU SELEÇÃO DE MODALIDADE (ESPORTS)
   -->
 
   <head>
@@ -56,7 +54,6 @@
           <img class="d-inline-block align-middle" src="assets/images/logo.svg" id="logo"></img>
           Betavo
         </a>
-        <!-- TODO: Fazer ícone de usuário -->
         <div class="d-inline-block align-right dropdown">
           <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="/assets/images/avatar.svg" alt="foto" height="60px" width="60px" id="user_avatar">
@@ -88,23 +85,42 @@
       </div>
     </div>
 
-    <!-- Menu seletor de modalidade (Games) -->
-    <div class="d-flex justify-content-center bg-success p-4 text-white">
-      <div class="mx-2">Dota</div>
-      <div class="mx-2">Valorant</div>
-      <div class="mx-2">Overwatch</div>
-    </div>
+
 
 
 
     <!-- Seletor de times -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false">
+
+      <!-- Menu seletor de modalidade (Games) -->
+      <div class="d-flex justify-content-center bg-success text-white" style="height: 70px; padding-bottom: 75px;">
+        <div class="carousel-indicators position-relative">
+          <div style="height: fit-content;">
+            <button class="active bg-primary" style="width: 75px; height: 75px; box-sizing: border-box;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+              <img src="assets/images/games/dota-logo.svg" style="position: absolute; left: 17px; top: 17px">
+            </button>
+          </div>
+          <div style="height: fit-content;">
+            <button class="bg-primary"        style="width: 75px; height: 75px; box-sizing: border-box;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+              <img src="assets/images/games/valorant-logo.svg" style="position: absolute;height: 45px; left: 99px; top: 16px">
+            </button>
+          </div>
+          <div style="height: fit-content;">
+            <button class="bg-primary"        style="width: 75px; height: 75px; box-sizing: border-box;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+              <img src="assets/images/games/overwatch-logo.svg" style="position: absolute; left: 179px; top: 16px">
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div class="carousel-inner">
+        <!-- APOSTAS DOTA -->
         <div class="carousel-item active">
+          <!-- Card de Apostas -->
           <div class="d-flex justify-content-center p-3 text-white">
             <div class="bg-success btn-detail-left">
               <div class="circle-left">
-                <img class="game-logo" src="assets/images/games/valorant-logo.svg" alt="valorant logo">
+                <img class="game-logo" src="assets/images/games/dota-logo.svg" style="height: 40px; margin-left: 6px; margin-top: 6px;" alt="valorant logo">
               </div>
             </div>
             <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
@@ -131,11 +147,123 @@
             </button>
             <div class="bg-success btn-detail-right">
               <div class="circle-right">
-                <img class="game-logo" src="assets/images/games/valorant-logo.svg" alt="valorant logo">
+                <img class="game-logo" src="assets/images/games/dota-logo.svg" style="height: 40px; margin-left: 6px; margin-top: 6px;" alt="dota logo">
+              </div>
+            </div>
+          </div>
+          
+          <div class="d-flex justify-content-center p-3 text-white">
+            <div class="bg-success btn-detail-left">
+              <div class="circle-left">
+                <img class="game-logo" src="assets/images/games/dota-logo.svg" style="height: 40px; margin-left: 6px; margin-top: 6px;" alt="valorant logo">
+              </div>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <div class="btn-logo-team-left">
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+                <span>Furia Sports</span>
+              </div>
+              <div class="btn-chances-left">
+                <span><strong>2.26</strong></span>
+              </div>
+            </button>
+            <div class="justify-content-center" style="margin: 0 30px; margin-top: 20px;">
+              <span><strong>VS</strong></span>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-right" style="margin: 0 0;">
+              <div class="btn-chances-right">
+                <span><strong>2.26</strong></span>
+              </div>
+              <div class="btn-logo-team-right">
+                <span>Furia Sports</span>
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+              </div>
+            </button>
+            <div class="bg-success btn-detail-right">
+              <div class="circle-right">
+                <img class="game-logo" src="assets/images/games/dota-logo.svg" style="height: 40px; margin-left: 6px; margin-top: 6px;" alt="dota logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center p-3 text-white">
+            <div class="bg-success btn-detail-left">
+              <div class="circle-left">
+                <img class="game-logo" src="assets/images/games/dota-logo.svg" style="height: 40px; margin-left: 6px; margin-top: 6px;" alt="valorant logo">
+              </div>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <div class="btn-logo-team-left">
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+                <span>Furia Sports</span>
+              </div>
+              <div class="btn-chances-left">
+                <span><strong>2.26</strong></span>
+              </div>
+            </button>
+            <div class="justify-content-center" style="margin: 0 30px; margin-top: 20px;">
+              <span><strong>VS</strong></span>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-right" style="margin: 0 0;">
+              <div class="btn-chances-right">
+                <span><strong>2.26</strong></span>
+              </div>
+              <div class="btn-logo-team-right">
+                <span>Furia Sports</span>
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+              </div>
+            </button>
+            <div class="bg-success btn-detail-right">
+              <div class="circle-right">
+                <img class="game-logo" src="assets/images/games/dota-logo.svg" style="height: 40px; margin-left: 6px; margin-top: 6px;" alt="dota logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center p-3 text-white">
+            <div class="bg-success btn-detail-left">
+              <div class="circle-left">
+                <img class="game-logo" src="assets/images/games/dota-logo.svg" style="height: 40px; margin-left: 6px; margin-top: 6px;" alt="valorant logo">
+              </div>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <div class="btn-logo-team-left">
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+                <span>Furia Sports</span>
+              </div>
+              <div class="btn-chances-left">
+                <span><strong>2.26</strong></span>
+              </div>
+            </button>
+            <div class="justify-content-center" style="margin: 0 30px; margin-top: 20px;">
+              <span><strong>VS</strong></span>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-right" style="margin: 0 0;">
+              <div class="btn-chances-right">
+                <span><strong>2.26</strong></span>
+              </div>
+              <div class="btn-logo-team-right">
+                <span>Furia Sports</span>
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+              </div>
+            </button>
+            <div class="bg-success btn-detail-right">
+              <div class="circle-right">
+                <img class="game-logo" src="assets/images/games/dota-logo.svg" style="height: 40px; margin-left: 6px; margin-top: 6px;" alt="dota logo">
               </div>
             </div>
           </div>
         </div>
+
+
+
+
+
+        
+        <!-- APOSTAS VALORANT -->
         <div class="carousel-item ">
           <div class="d-flex justify-content-center p-3 text-white">
             <div class="bg-success btn-detail-left">
@@ -171,8 +299,77 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
+
+          <div class="d-flex justify-content-center p-3 text-white">
+            <div class="bg-success btn-detail-left">
+              <div class="circle-left">
+                <img class="game-logo" src="assets/images/games/valorant-logo.svg" alt="valorant logo">
+              </div>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <div class="btn-logo-team-left">
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+                <span>Furia Sports</span>
+              </div>
+              <div class="btn-chances-left">
+                <span><strong>2.26</strong></span>
+              </div>
+            </button>
+            <div class="justify-content-center" style="margin: 0 30px; margin-top: 20px;">
+              <span><strong>VS</strong></span>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-right" style="margin: 0 0;">
+              <div class="btn-chances-right">
+                <span><strong>2.26</strong></span>
+              </div>
+              <div class="btn-logo-team-right">
+                <span>Furia Sports</span>
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+              </div>
+            </button>
+            <div class="bg-success btn-detail-right">
+              <div class="circle-right">
+                <img class="game-logo" src="assets/images/games/valorant-logo.svg" alt="valorant logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center p-3 text-white">
+            <div class="bg-success btn-detail-left">
+              <div class="circle-left">
+                <img class="game-logo" src="assets/images/games/valorant-logo.svg" alt="valorant logo">
+              </div>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <div class="btn-logo-team-left">
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+                <span>Furia Sports</span>
+              </div>
+              <div class="btn-chances-left">
+                <span><strong>2.26</strong></span>
+              </div>
+            </button>
+            <div class="justify-content-center" style="margin: 0 30px; margin-top: 20px;">
+              <span><strong>VS</strong></span>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-right" style="margin: 0 0;">
+              <div class="btn-chances-right">
+                <span><strong>2.26</strong></span>
+              </div>
+              <div class="btn-logo-team-right">
+                <span>Furia Sports</span>
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+              </div>
+            </button>
+            <div class="bg-success btn-detail-right">
+              <div class="circle-right">
+                <img class="game-logo" src="assets/images/games/valorant-logo.svg" alt="valorant logo">
+              </div>
+            </div>
+          </div>
+
           <div class="d-flex justify-content-center p-3 text-white">
             <div class="bg-success btn-detail-left">
               <div class="circle-left">
@@ -208,20 +405,155 @@
             </div>
           </div>
         </div>
+
+
+
+
+
+
+        <!-- APOSTAS OVERWATCH -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center p-3 text-white">
+            <div class="bg-success btn-detail-left">
+              <div class="circle-left" style="border-color: #F97F00;">
+                <img class="game-logo" src="assets/images/games/overwatch-logo.svg" style="height: 47px; margin-left: 2px; margin-top: 2px;" alt="valorant logo">
+              </div>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <div class="btn-logo-team-left">
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+                <span>Furia Sports</span>
+              </div>
+              <div class="btn-chances-left">
+                <span><strong>2.26</strong></span>
+              </div>
+            </button>
+            <div class="justify-content-center" style="margin: 0 30px; margin-top: 20px;">
+              <span><strong>VS</strong></span>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-right" style="margin: 0 0;">
+              <div class="btn-chances-right">
+                <span><strong>2.26</strong></span>
+              </div>
+              <div class="btn-logo-team-right">
+                <span>Furia Sports</span>
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+              </div>
+            </button>
+            <div class="bg-success btn-detail-right">
+              <div class="circle-right" style="border-color: #F97F00;">
+                <img class="game-logo" src="assets/images/games/overwatch-logo.svg" style="height: 47px; margin-left: 2px; margin-top: 2px;" alt="valorant logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center p-3 text-white">
+            <div class="bg-success btn-detail-left">
+              <div class="circle-left" style="border-color: #F97F00;">
+                <img class="game-logo" src="assets/images/games/overwatch-logo.svg" style="height: 47px; margin-left: 2px; margin-top: 2px;" alt="valorant logo">
+              </div>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <div class="btn-logo-team-left">
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+                <span>Furia Sports</span>
+              </div>
+              <div class="btn-chances-left">
+                <span><strong>2.26</strong></span>
+              </div>
+            </button>
+            <div class="justify-content-center" style="margin: 0 30px; margin-top: 20px;">
+              <span><strong>VS</strong></span>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-right" style="margin: 0 0;">
+              <div class="btn-chances-right">
+                <span><strong>2.26</strong></span>
+              </div>
+              <div class="btn-logo-team-right">
+                <span>Furia Sports</span>
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+              </div>
+            </button>
+            <div class="bg-success btn-detail-right">
+              <div class="circle-right" style="border-color: #F97F00;">
+                <img class="game-logo" src="assets/images/games/overwatch-logo.svg" style="height: 47px; margin-left: 2px; margin-top: 2px;" alt="valorant logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center p-3 text-white">
+            <div class="bg-success btn-detail-left">
+              <div class="circle-left" style="border-color: #F97F00;">
+                <img class="game-logo" src="assets/images/games/overwatch-logo.svg" style="height: 47px; margin-left: 2px; margin-top: 2px;" alt="valorant logo">
+              </div>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <div class="btn-logo-team-left">
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+                <span>Furia Sports</span>
+              </div>
+              <div class="btn-chances-left">
+                <span><strong>2.26</strong></span>
+              </div>
+            </button>
+            <div class="justify-content-center" style="margin: 0 30px; margin-top: 20px;">
+              <span><strong>VS</strong></span>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-right" style="margin: 0 0;">
+              <div class="btn-chances-right">
+                <span><strong>2.26</strong></span>
+              </div>
+              <div class="btn-logo-team-right">
+                <span>Furia Sports</span>
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+              </div>
+            </button>
+            <div class="bg-success btn-detail-right">
+              <div class="circle-right" style="border-color: #F97F00;">
+                <img class="game-logo" src="assets/images/games/overwatch-logo.svg" style="height: 47px; margin-left: 2px; margin-top: 2px;" alt="valorant logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center p-3 text-white">
+            <div class="bg-success btn-detail-left">
+              <div class="circle-left" style="border-color: #F97F00;">
+                <img class="game-logo" src="assets/images/games/overwatch-logo.svg" style="height: 47px; margin-left: 2px; margin-top: 2px;" alt="valorant logo">
+              </div>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-left" style="margin: 0 0;"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <div class="btn-logo-team-left">
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+                <span>Furia Sports</span>
+              </div>
+              <div class="btn-chances-left">
+                <span><strong>2.26</strong></span>
+              </div>
+            </button>
+            <div class="justify-content-center" style="margin: 0 30px; margin-top: 20px;">
+              <span><strong>VS</strong></span>
+            </div>
+            <button type="button" class="d-flex justify-content-between btn btn-primary btn-bet-right" style="margin: 0 0;">
+              <div class="btn-chances-right">
+                <span><strong>2.26</strong></span>
+              </div>
+              <div class="btn-logo-team-right">
+                <span>Furia Sports</span>
+                <img src="assets/images/teams/valorant/furia.svg" alt="furia logo">
+              </div>
+            </button>
+            <div class="bg-success btn-detail-right">
+              <div class="circle-right" style="border-color: #F97F00;">
+                <img class="game-logo" src="assets/images/games/overwatch-logo.svg" style="height: 47px; margin-left: 2px; margin-top: 2px;" alt="valorant logo">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="carousel-indicators position-relative">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-primary p-1" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-primary p-1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-primary p-1" aria-label="Slide 3"></button>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
     
 
@@ -275,8 +607,6 @@
         </div>
       </div>
     </div>
-    <!-- TODO:Fazer pop-up window de login e registrar 
-    link: https://www.youtube.com/watch?v=0bB1ERbj4kw -->
 
 
 
